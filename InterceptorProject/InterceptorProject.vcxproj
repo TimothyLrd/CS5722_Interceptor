@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +128,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CDPlayerController.cpp" />
+    <ClCompile Include="PlayerSoftware.cpp" />
+    <ClCompile Include="PlayerHardware.cpp" />
+    <ClCompile Include="Dispatcher.cpp" />
     <ClCompile Include="InterceptorProject.cpp" />
+    <ClCompile Include="PlayerState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CDPlayerController.h" />
+    <ClInclude Include="PlayerSoftware.h" />
+    <ClInclude Include="PlayerHardware.h" />
+    <ClInclude Include="Dispatcher.h" />
+    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InterceptorProject.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

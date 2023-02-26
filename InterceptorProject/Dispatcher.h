@@ -1,18 +1,17 @@
 #pragma once
-#include "PlayerHardware.h"
-#include <vector>
+#include "ConcreteInterceptor.h"
+
+using namespace std;
 
 class Dispatcher
 {
-	std::vector<PlayerHardware*> interceptors;
+protected:
+	vector<ConcreteInterceptor*> interceptors;
+	void iterate_list(InterceptorEvent event, ContextObject* controller);
 
-public:void dispatch(Event event, CDPlayerController* controller);
-
-public:void registerInterceptor(PlayerHardware* interceptor);
-
-public:void remove(PlayerHardware* interceptor);
-
-	void iterate_list(Event event, CDPlayerController* controller);
-
+public:
+	void dispatch(InterceptorEvent event, ContextObject* controller);
+	void registerInterceptor(ConcreteInterceptor* interceptor);
+	void remove(ConcreteInterceptor* interceptor);
 };
 

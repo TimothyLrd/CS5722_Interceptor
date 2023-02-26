@@ -128,19 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CDPlayerController.cpp" />
-    <ClCompile Include="PlayerSoftware.cpp" />
-    <ClCompile Include="PlayerHardware.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CDPlayer.cpp" />
+    <ClCompile Include="ConcreteInterceptor.cpp" />
+    <ClCompile Include="Facade.cpp" />
     <ClCompile Include="Dispatcher.cpp" />
     <ClCompile Include="InterceptorProject.cpp" />
-    <ClCompile Include="PlayerState.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CDPlayerController.h" />
-    <ClInclude Include="PlayerSoftware.h" />
-    <ClInclude Include="PlayerHardware.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CDPlayer.h" />
+    <ClInclude Include="ContextObject.h" />
+    <ClInclude Include="Facade.h" />
+    <ClInclude Include="ConcreteInterceptor.h" />
     <ClInclude Include="Dispatcher.h" />
-    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="InterceptorEvent.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
